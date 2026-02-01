@@ -23,7 +23,7 @@ app.use(express.json());
 connectDB();
 
 // Documentación con Swagger
-const swaggerDocument = YAML.load('./swagger/swagger.yaml');
+const swaggerDocument = YAML.load('./swagger.yaml');
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Rutas
